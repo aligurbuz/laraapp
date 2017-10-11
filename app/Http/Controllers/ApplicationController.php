@@ -39,7 +39,7 @@ class ApplicationController extends Controller
         }
 
         //red application service call
-        return $serviceInstance->$serviceMethod();
+        return app()->call([$serviceInstance,$serviceMethod],[]);
     }
 
     /**
