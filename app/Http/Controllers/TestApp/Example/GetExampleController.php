@@ -14,4 +14,5 @@ class GetExampleController extends Controller
 
         return $this->request()->getClientIp();
     }
+
 }

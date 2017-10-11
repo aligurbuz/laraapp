@@ -42,6 +42,7 @@ class ApplicationController extends Controller
         return app()->call([$serviceInstance,$serviceMethod],[]);
     }
 
+
     /**
      * @param $params
      * @method getAppVars

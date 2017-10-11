@@ -15,4 +15,5 @@ class PostExampleController extends Controller
 
         return $this->request()->getMethod();
     }
+
 }

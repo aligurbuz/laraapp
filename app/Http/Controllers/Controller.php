@@ -34,6 +34,7 @@ class Controller extends BaseController
         return $container->get($class);
     }
 
+
     /**
      * @param $data
      * @return string
