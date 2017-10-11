@@ -52,5 +52,5 @@ header ile x-csrf-token yollanır.
 
 # Önemli
 
-Post isteklerde her zaman header yolu ile X-CSRF-TOKEN keyi ve csrf_token() gondermek zorundasınız.
+Post isteklerde her zaman header yolu ile X-CSRF-TOKEN keyine karşılık olarak csrf_token() değeri gondermek zorundasınız.
 
