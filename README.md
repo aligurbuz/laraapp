@@ -11,7 +11,7 @@ php artisan key:generate
 
 # Go Directly Controller Directory:
 
-You will see testApp Directory as an example, you can build up as many apps as you want with the App Prefixi.
+You will see testApp Directory as an example, you can build up as many apps as you want with the App Prefix.
 
 
 In the TestApp directory, each endpoint represents a directory, and each endpoint has an endpoint controller that starts with get and post in the endpoint directory. 
