@@ -30,6 +30,16 @@ Http|Https://networkIp/folderName/public/[app]/[endpoint]/[method]
 
 > [method] => GetEndPointController yada PostEndpointController icinde istenecek olan method ismi (Action prefixi yazılmaz)
 
+# Örnek İstek
+
+default olarak gelen controllers dizini icindeki testApp uygulamasına get request yapalım
+
+```bash
+Http|Https://networkIp/folderName/public/test/example/index
+```
+
+Bu istek testApp dizini icinde bulunan example dizini icindeki GetExampleController icindeki indexAction ı çalıştırmış olacaktır.
+
 
 # Önemli
 
