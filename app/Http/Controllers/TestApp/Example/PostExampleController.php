@@ -13,6 +13,6 @@ class PostExampleController extends Controller
      */
     public function indexAction(){
 
-        return $this->request()->getClientIp();
+        return $this->request()->getMethod();
     }
 }

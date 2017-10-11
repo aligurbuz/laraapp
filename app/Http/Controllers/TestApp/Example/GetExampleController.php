@@ -12,6 +12,6 @@ class GetExampleController extends Controller
      */
     public function indexAction(){
 
-        return csrf_token();
+        return $this->request()->getMethod();
     }
 }
