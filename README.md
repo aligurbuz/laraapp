@@ -1,6 +1,6 @@
 ## Develop Laravel Application Without Reading Route
 
-#Installment :
+# Installation :
 ```bash
 git clone https://github.com/aligurbuz/laraapp.git folderName
 cd folderName
