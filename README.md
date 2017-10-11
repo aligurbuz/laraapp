@@ -21,7 +21,7 @@ post ile başlayanlar post endpointler de karşılanır.Başlangıç http proces
 # İstekler Nasıl Yapılır?
 
 ```bash
-Http|Https://networkIp/laravelHome/public/[app]/[endpoint]/[method]
+Http|Https://networkIp/folderName/public/[app]/[endpoint]/[method]
 ```
 
 > [app] => Controller dizini icindeki App prefixiyle başlayan application isminiz
