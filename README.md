@@ -39,7 +39,16 @@ Http|Https://networkIp/folderName/public/test/example/index
 ```
 
 Bu istek testApp dizini icinde bulunan example dizini icindeki GetExampleController icindeki indexAction ı çalıştırmış olacaktır.
+Url'in sonundaki index methodun kendisidir.Ornegin :fooAction diye bir methodunuz varsa;
 
+```bash
+Http|Https://networkIp/folderName/public/test/example/foo
+```
+
+İstek böyle yollanacaktır.
+
+Post request icin request dosyası postExampleController olacaktır.Yöntem aynıdır.Sadece post işlemlerde
+header ile x-csrf-token yollanır.
 
 # Önemli
 
