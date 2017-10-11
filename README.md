@@ -1,6 +1,6 @@
-## Rota Okumadan Laravel Applicationu Geliştirme
+## Develop Laravel Application Without Reading Route
 
-#Kurulum :
+#Installment :
 ```bash
 git clone https://github.com/aligurbuz/laraapp.git folderName
 cd folderName
@@ -9,48 +9,44 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-# Direkt Controller Dizine Gidin:
+# Go Directly Controller Directory:
 
-Örnek olarak karşınıza TestApp dizini gelecek,App Prefixi olmak şartıyla istediğiniz kadar uygulama 
-oluşturabilirsiniz.
+You will see testApp Directory as an example, you can build up as many apps as you want with the App Prefixi.
 
-TestApp Dizini icinde her endpointiniz bir dizini ifade eder ve her endpoint dizini icinde
-get ve post ile başlayan endpoint controlleriniz vardır.Http olarak get requestler get ile başlayan endpointleri karşılar
-post ile başlayanlar post endpointler de karşılanır.Başlangıç http processlerinizi çoğaltabilirsiniz.
 
-# İstekler Nasıl Yapılır?
+In the TestApp directory, each endpoint represents a directory, and each endpoint has an endpoint controller that starts with get and post in the endpoint directory. 
+GetRequests requests endpoints that begin with get, and PostRequests requests endpoints that begin with post. You can duplicate your start http processes.
+
+# How are requests made?
 
 ```bash
 Http|Https://networkIp/folderName/public/[app]/[endpoint]/[method]
 ```
 
-> [app] => Controller dizini icindeki App prefixiyle başlayan application isminiz.(App prefixi yazılmaz)
+> [app] => The name of the application that starts with the App prefix in the Controller directory (App Prefix is not written on the Url)
 
-> [endpoint]=> Applicationunuzun icindeki endpoint dizin ismi
+> [endpoint]=> The endpoint directory name in your application
 
-> [method] => GetEndPointController yada PostEndpointController icinde istenecek olan method ismi (Action prefixi yazılmaz)
+> [method] => method name to be requested in get or post (Like indexAction -- App Prefix is not written on the Url)
 
-# Örnek İstek
+# Example Request
 
-default olarak gelen controllers dizini icindeki testApp uygulamasına get request yapalım
+By default, get request to the getExampleController in testApp application the incoming controllers directory
 
 ```bash
 Http|Https://networkIp/folderName/public/test/example/index
 ```
 
-Bu istek testApp dizini icinde bulunan example dizini icindeki GetExampleController icindeki indexAction ı çalıştırmış olacaktır.
-Url'in sonundaki index methodun kendisidir.Ornegin :fooAction diye bir methodunuz varsa;
+This request will have run indexAction in the GetExampleController inside the example array in the testApp array.
+The index name at the end of the url is itself. For example: if you have a method called fooAction;
 
 ```bash
 Http|Https://networkIp/folderName/public/test/example/foo
 ```
 
-İstek böyle yollanacaktır.
+The request will be sent like this.
 
-Post request icin request dosyası postExampleController olacaktır.Yöntem aynıdır.Sadece post işlemlerde
-header ile x-csrf-token yollanır.
+The request file for the post request will be the postExampleController. The process is the same.
+Only x-csrf-token via header are sent.
 
-# Önemli
-
-Post isteklerde her zaman header yolu ile X-CSRF-TOKEN keyine karşılık olarak csrf_token() değeri gondermek zorundasınız.
 
