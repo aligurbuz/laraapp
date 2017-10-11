@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\TestApp\Example;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class GetExampleController extends Controller
 {
@@ -11,8 +10,8 @@ class GetExampleController extends Controller
      * @method indexAction
      * @return string
      */
-    public function indexAction(Request $request){
+    public function indexAction(){
 
-        return $this->request()->getMethod();
+        return $this->request()->getClientIp();
     }
 }
