@@ -24,7 +24,7 @@ post ile başlayanlar post endpointler de karşılanır.Başlangıç http proces
 Http|Https://networkIp/folderName/public/[app]/[endpoint]/[method]
 ```
 
-> [app] => Controller dizini icindeki App prefixiyle başlayan application isminiz
+> [app] => Controller dizini icindeki App prefixiyle başlayan application isminiz.(App prefixi yazılmaz)
 
 > [endpoint]=> Applicationunuzun icindeki endpoint dizin ismi
 
