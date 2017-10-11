@@ -31,7 +31,7 @@ Http|Https://networkIp/folderName/public/[app]/[endpoint]/[method]
 > [method] => GetEndPointController yada PostEndpointController icinde istenecek olan method ismi (Action prefixi yazılmaz)
 
 
-#Önemli
+# Önemli
 
 Post isteklerde her zaman header yolu ile X-CSRF-TOKEN keyi ve csrf_token() gondermek zorundasınız.
 
